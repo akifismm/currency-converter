@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+.nav {
+  width: 100%;
+  background-color: #f5f5f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  gap: 80px;
+}
+
+.image {
+  width: 130px;
+  height: 35px;
+}
+
+.texts {
+  display: flex;
+  gap: 40px;
+}
+
+.text {
+  color: #959ba4;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.text-first {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button {
+  min-width: 90px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 80px;
+  margin-left: 250px;
+}
+
+.two-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+h1 {
+  font-size: 45px;
+  display: flex;
+}
+
+.some-text {
+  font-size: 15px;
+  color: #9f9f9f;
+}
+
+.money-button-2,
+.money-button-3 {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #c6c6c6;
+  color: #c6c6c6;
+  cursor: pointer;
+}
+
+.money-button-1 {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #c6c6c6;
+  color: #c6c6c6;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  cursor: pointer;
+}
+
+.money-button-4 {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #c6c6c6;
+  color: #c6c6c6;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+
+.right-nav,
+.left-nav {
+  display: flex;
+  gap: 0;
+}
+
+.input {
+  width: 320px;
+  height: 130px;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.convertor-1 {
+  position: absolute;
+  top: 59.5%;
+  left: 19%;
+  font-size: 15px;
+  color: #c6c6c6;
+}
+
+.convertor-2 {
+  position: absolute;
+  top: 59.5%;
+  left: 56.5%;
+  font-size: 15px;
+  color: #c6c6c6;
+}
+
+.text-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-side,
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.icon {
+  display: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .nav {
+    width: 100%;
+    padding: 20px 30px;
+    gap: 40px;
+  }
+
+  .image {
+    width: 80px;
+    height: 25px;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .texts.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .iconn {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .button {
+    min-width: 70px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .two-side {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h1 {
+    width: 320px;
+    font-size: 23px;
+    display: flex;
+  }
+
+  .some-text {
+    font-size: 15px;
+  }
+
+  .money-button-2,
+  .money-button-3 {
+    width: 60px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .money-button-1 {
+    width: 60px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .money-button-4 {
+    width: 60px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .right-nav,
+  .left-nav {
+    display: flex;
+    gap: 0;
+  }
+
+  .input {
+    width: 240px;
+    height: 100px;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .convertor-1 {
+    position: absolute;
+    top: 356px;
+    left: 33px;
+    font-size: 15px;
+    color: #c6c6c6;
+  }
+
+  .convertor-2 {
+    position: absolute;
+    top: 602px;
+    left: 33px;
+    font-size: 15px;
+    color: #c6c6c6;
+  }
+
+  .text-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-side,
+  .left-side {
+    gap: 35px;
+  }
+
+  .text-nav {
+    gap: 10px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 601px) {
+  .nav {
+    width: 100%;
+    padding: 20px 40px;
+    gap: 30px;
+  }
+
+  .image {
+    width: 90px;
+    height: 30px;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .texts.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .iconn {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .button {
+    min-width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .container {
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .two-side {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .some-text {
+    font-size: 18px;
+  }
+
+  .money-button-2,
+  .money-button-3 {
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .money-button-1 {
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .money-button-4 {
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .right-nav,
+  .left-nav {
+    display: flex;
+    gap: 0;
+  }
+
+  .input {
+    width: 360px;
+    height: 120px;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .convertor-1 {
+    position: absolute;
+    top: 398px;
+    left: 34px;
+    font-size: 15px;
+    color: #c6c6c6;
+  }
+
+  .convertor-2 {
+    position: absolute;
+    top: 675px;
+    left: 34px;
+    font-size: 15px;
+    color: #c6c6c6;
+  }
+
+  .text-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-side,
+  .left-side {
+    gap: 35px;
+  }
+
+  .text-nav {
+    gap: 10px;
+  }
+
+  .error-message{
+    font-size: 15px;
+    margin-top: 60px;
+}
+}
+
+@media screen and (min-width: 602px) and (max-width: 801px) {
+  .nav {
+    width: 100%;
+    padding: 20px 40px;
+    gap: 30px;
+  }
+
+  .image {
+    width: 100px;
+    height: 30px;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .texts.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 130px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .iconn {
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .button {
+    min-width: 90px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .container {
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .two-side {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .some-text {
+    font-size: 20px;
+  }
+
+  .money-button-2,
+  .money-button-3 {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .money-button-1 {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .money-button-4 {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .right-nav,
+  .left-nav {
+    display: flex;
+    gap: 0;
+  }
+
+  .input {
+    width: 480px;
+    height: 160px;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .convertor-1 {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    font-size: 20px;
+    color: #c6c6c6;
+  }
+
+  .convertor-2 {
+    position: absolute;
+    top: 780px;
+    left: 50px;
+    font-size: 20px;
+    color: #c6c6c6;
+  }
+
+  .text-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-side,
+  .left-side {
+    gap: 35px;
+  }
+
+  .text-nav {
+    gap: 10px;
+  }
+
+  .error-message{
+    font-size: 20px;
+    margin-top: 60px;
+}
+}
+@media screen and (min-width: 802px) and (max-width: 991px) {
+  .nav {
+    width: 100%;
+    padding: 20px 40px;
+    gap: 30px;
+  }
+
+  .image {
+    width: 120px;
+    height: 35px;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .texts.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 210px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  .icon {
+    display: inline;
+  }
+
+  .iconn {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .button {
+    min-width: 100px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .container {
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .two-side {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  .some-text {
+    font-size: 25px;
+  }
+
+  .money-button-2,
+  .money-button-3 {
+    width: 180px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  .money-button-1 {
+    width: 180px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  .money-button-4 {
+    width: 180px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  .right-nav,
+  .left-nav {
+    display: flex;
+    gap: 0;
+  }
+
+  .input {
+    width: 720px;
+    height: 250px;
+    font-size: 50px;
+    padding-top: 3px;
+    padding-left: 15px;
+  }
+
+  .convertor-1 {
+    position: absolute;
+    top: 560px;
+    left: 50px;
+    font-size: 25px;
+    color: #c6c6c6;
+  }
+
+  .convertor-2 {
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    font-size: 25px;
+    color: #c6c6c6;
+  }
+
+  .text-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-side,
+  .left-side {
+    gap: 35px;
+  }
+
+  .text-nav {
+    gap: 10px;
+  }
+
+  .error-message{
+    font-size: 26px;
+    margin-top: 60px;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .nav {
+    width: 100%;
+    padding: 20px 80px;
+    gap: 30px;
+  }
+
+  .image {
+    width: 110px;
+    height: 35px;
+  }
+
+  .texts {
+    display: flex;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .text-first {
+    font-size: 13px;
+  }
+
+  .button {
+    min-width: 90px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .container {
+    gap: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .two-side {
+    display: flex;
+    gap: 120px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .some-text {
+    font-size: 20px;
+  }
+
+  .money-button-2,
+  .money-button-3 {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .money-button-1 {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .money-button-4 {
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .right-nav,
+  .left-nav {
+    display: flex;
+    gap: 0;
+  }
+
+  .input {
+    width: 360px;
+    height: 180px;
+    font-size: 35px;
+    padding-top: 3px;
+    padding-left: 15px;
+  }
+
+  .convertor-1 {
+    position: absolute;
+    top: 495px;
+    left: 63px;
+    font-size: 20px;
+    color: #c6c6c6;
+  }
+
+  .convertor-2 {
+    position: absolute;
+    top: 495px;
+    left: 547px;
+    font-size: 20px;
+    color: #c6c6c6;
+  }
+
+  .text-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .right-side,
+  .left-side {
+    gap: 50px;
+  }
+
+  .text-nav {
+    gap: 20px;
+  }
+
+  .error-message{
+    font-size: 32px;
+    margin-top: 60px;
+}
+}
